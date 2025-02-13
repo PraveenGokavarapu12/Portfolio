@@ -92,7 +92,7 @@ function App() {
             <h1 className=" animate-slideLeft text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-600 text-transparent bg-clip-text animate-gradient">
               Praveen Gokavarapu
             </h1>
-            <h2 className=" animate-slideRight text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
+            <h2 className=" animate-slideRight text-2xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-600 text-transparent bg-clip-text">
               MERN Stack Developer
             </h2>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 opacity-0 animate-fadeIn">
@@ -256,8 +256,8 @@ function App() {
                     'Enhanced user engagement – Built an intuitive UI with React & Tailwind CSS, increasing user retention.',
                     
                   ],
-                  link: 'https://restaurant-app-praveens-projects-f516e3e2.vercel.app/',
-                  github: 'https://github.com/PraveenGokavarapu12/Restaurant-App'
+                  link: 'https://developers-hub-praveen.vercel.app/',
+                  github: 'https://github.com/PraveenGokavarapu12/Developers-Hub'
                 },
                 {
                   title: 'Restaurant App',
@@ -284,8 +284,8 @@ function App() {
                     'Achieved a well-structured and maintainable codebase using React.js and Redux for scalability.',
                    
                   ],
-                  link: 'https://project2.example.com',
-                  github: 'https://github.com/yourusername/analytics'
+                  link: 'https://restaurant-app-praveen.vercel.app/',
+                  github: 'https://github.com/PraveenGokavarapu12/Restaurant-App'
                 },
                 {
                   title: 'Contact Manager App',
@@ -321,7 +321,9 @@ function App() {
                   className="group bg-white/5 backdrop-blur-sm rounded-xl overflow-hidden hover:bg-white/10 transition-all duration-300"
                 >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="relative aspect-video">
+                  <a href={project.link}
+                            target="_blank">
+                  <div className="relative aspect-video">
                       <img
                         src={project.image}
                         alt={project.title}
@@ -329,6 +331,10 @@ function App() {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     </div>
+
+                  </a>
+                    
+                   
                     <div className="p-6">
                       <div className="flex items-center justify-between mb-4">
                         <h3 className="text-2xl font-bold">{project.title}</h3>
